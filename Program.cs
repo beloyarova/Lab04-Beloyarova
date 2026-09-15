@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-int age = 15;
+﻿int age = 15;
 if (age >= 21)
 {
     Console.WriteLine("Доступ разрешен");
