@@ -6,7 +6,7 @@ if (age >= 21)
 Console.WriteLine("Программа продолжает работу");
 
 int age1 = 15;
-if (age >= 18)
+if (age1 >= 18)
 {
     Console.WriteLine("Доступ разреен");
 }else
