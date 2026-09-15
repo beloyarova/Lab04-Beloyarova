@@ -1,4 +1,6 @@
-﻿int age = 15;
+﻿using System.Drawing;
+
+int age = 15;
 if (age >= 21)
 {
     Console.WriteLine("Доступ разрешен");
@@ -44,10 +46,70 @@ bool adult = false;
 if (age3 >= 14 && height >= 1.5)
 {
     Console.WriteLine("Можно кататься");
-}else if (height < 1.5 && adult == true)
+}
+else if (height < 1.5 && adult == true)
 {
     Console.WriteLine("Можно кататься");
-}else
+}
+else
 {
     Console.WriteLine("Пока нельзя");
+}
+
+Console.WriteLine();
+Console.Write("Введите число: ");
+int number = int.Parse(Console.ReadLine());
+
+if (number % 2 == 0)
+{
+    Console.WriteLine("Число четное");
+}
+else
+{
+    Console.WriteLine("Числе нечетное");
+}
+
+Console.WriteLine();
+Console.Write("Введите вашу оценку: ");
+int ball = int.Parse(Console.ReadLine());
+
+if (ball == 2)
+{
+    Console.WriteLine("Неудовлетворительно");
+}
+else if (ball == 3)
+{
+    Console.WriteLine("Удовлетворительно");
+}
+else if (ball == 4)
+{
+    Console.WriteLine("Хорошо");
+}
+else
+{
+    Console.WriteLine("Отлично");
+}
+
+Console.WriteLine();
+Console.WriteLine("Вариант 6");
+Console.WriteLine();
+
+Console.Write("Введите количество баллов: ");
+double point = double.Parse(Console.ReadLine());
+
+if (point < 0 || point > 100)
+{
+    Console.WriteLine("Неверное значение");
+}else if (point >= 90)
+{
+    Console.WriteLine("Отличтно");
+}else if (point >= 75)
+{
+    Console.WriteLine("Хорошо");
+}else if (point >= 60)
+{
+    Console.WriteLine("Удовлетворитель");
+}else
+{
+    Console.WriteLine("Неудовлетворительно");
 }
